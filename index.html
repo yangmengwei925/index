@@ -1,0 +1,141 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-08-23 10:24:35
+ * @LastEditTime: 2020-08-23 13:12:38
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \undefinedc:\Users\925423\Desktop\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function fact(n){
+        //     if(n===1){
+        //         return 1;
+        //     }
+        //     return n* fact(n-1)
+        // }
+        // console.log(fact(5))
+        // function fb(n){
+        //     if(n<=0){
+        //         return 0
+        //     }
+        //     if(n<=2){
+        //         return 1;
+        //     }
+        //     return fb(n-1) + fb(n-2)
+        // }
+        // console.log(fb(3))
+    //     function test1(){
+    //          console.log(1)
+    //     }
+    //    test1()
+    //     function test2(){ 
+    //           console.log(2)
+    //     }
+    //         test2()
+    //     function test3(){ 
+    //           console.log(3)
+    //     }
+    //         test3()
+    // add(1,2)
+    // function add(a,b){
+    //     return a+b
+    //     console.log(a+b)
+    // }
+    //立即执行的函数表达 初始化iife
+    // (function(){
+
+    // })()
+    // (function (){
+    //     var a =1,
+    //         b =2;
+    //         return a+b
+    //         console.log(a+b)
+    // }())//w3c
+    // (function test(){
+    //     return 123
+    //     console.log(123)
+    // })()
+    // function Car(brand,color){
+    //     this.brand =brand;
+    //     this.color =color;
+    //     this.run =function(){
+    //         console.log('runing')
+    //     }
+    // }
+    // //排气量
+    // var newCar ={
+    //     displaceent:'3.0'
+    // }
+    // Car.call(newCar,'brand','red');
+    //   console.log(newCar)
+    // function Compute(){
+    //     this.plus =function(a,b){
+    //         console.log(a+b)
+    //     }
+    //     this.minus =function (a,b){
+    //         console.log(a-b)
+    //     }
+    // }
+    // function FullCompute(){
+    //         Compute.apply(this)
+    //         this.mul =function (a,b){
+    //             console.log(a*b)
+    //         }
+    //         this.div =function (a,b){
+    //             console.log(a/b)
+    //         }
+    //     }
+    //     var compute = new FullCompute();
+    //     compute.plus(1,2);
+    //     compute.minus(1,2);
+    //     compute.mul(1,2);
+    //     compute.div(1,2)
+//利用原型封装typeof方法//数组按照元素的字节数排序
+//     function myTypeof(val){
+//     var type =typeof(val);
+//     var toStr =Object.prototype.toString;
+//     var res ={
+//         '[object Array]' : 'array',
+//         '[object Object]' : 'object',
+//         '[object Number]' : 'object number',
+//         '[object String]' : 'object string',
+//         '[object Boolean]' : 'object boolean',
+//     }
+//     if(val ==null){
+//         return 'null'
+//     }else if(type ==='object'){
+//         var ret = toSrt.call(val);
+//         return res[ret]
+//     }else{
+//         return type
+//     }
+// }
+// console.log(myTypeof('1'))
+        //克隆
+        var person1 ={
+             name:"张三",
+            age:18,
+            sex:"men",
+             height:1200,
+             weight:140
+         }
+        // var person2 =person1;
+        // person2.name ='李四';
+        // console.log(person1,person2)
+        var person2 ={};
+         for(var key in person1){
+             person2[key]=person1[key];  
+         }
+         person2.name = '李四'
+         console.log(person1,person2)
+    </script>
+</body>
+</html>
